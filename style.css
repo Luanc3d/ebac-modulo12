@@ -4,6 +4,7 @@ body{
     font-weight: 300;
     color: black;
     margin: 0;
+    background: #cbe6ff;
 }
 
 .header{
@@ -60,6 +61,7 @@ body{
 
 .article__products {
     text-align: center; 
+    border: 1px dashed  #000000;
 }
 
 .article__products-img {
@@ -96,7 +98,7 @@ body{
 }
 
 .products__btn--disabled{
-    background-color: rgb(99, 138, 224);
+    background-color: rgb(255, 109, 109);
     color: #ff0000;
 }
 
@@ -165,13 +167,23 @@ body{
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
+    .header {
+        background: #60adcc;
+    }
+    body {
+        background: #e6f08b;
+    }
     .section__banner {
         padding: 30px 0;
     }
 
+    .header__logo {
+        width: 100px;
+    }
+
     .section__banner-title {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .section__banner-txt{
@@ -197,6 +209,7 @@ body{
     .section__cart {
         width: 100%;
         box-shadow: none;
+        right: -150%;
     }
 
     .div__cart-txt{
